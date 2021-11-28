@@ -1,0 +1,15 @@
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+#mainNavbar .nav-link:hover {
+    color: red!important;
+}
