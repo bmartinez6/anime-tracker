@@ -26,3 +26,12 @@ hr {
         font-size: 3rem;
     }
 }
+
+h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+#bottom {
+    padding: 2%
+}

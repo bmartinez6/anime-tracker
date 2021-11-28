@@ -19,5 +19,70 @@
 
 <hr>
 
-<div class="container-fluid bg-dark " id="list">
+<div class="container-fluid bg-dark" id="bottom">
+    <div class="container">
+        <h2>Anime List</h2>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger">Add
+            Show</button>
+        <table class="table text-white">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Watched</th>
+                    <th scope="col">To Watch</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>One Piece</td>
+                    <td>&check;</td>
+                    <td></td>
+                    <td>
+                        <button class="btn btn-warning mx-1">Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Show Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Show Title</label>
+                        <input type="text" formControlName="title" class="form-control" id="title"
+                            placeholder="Enter title">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="yes" id="yes" value="yes" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Watched
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="no" id="no" value="no">
+                        <label class="form-check-label" for="exampleRadios2">
+                            To Watch
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+    </div>
 </div>
