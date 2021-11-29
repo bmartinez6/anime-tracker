@@ -61,7 +61,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Show Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -73,19 +73,22 @@
                             placeholder="Enter title">
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="animeRadio" id="watched" [value]="true">
+                        <input class="form-check-input" type="radio" formControlName="watched" name="animeRadio"
+                            id="animeRadio" value="&check;">
                         <label class="form-check-label" for="watched">
                             Watched
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="animeRadio" id="watching" [value]="true">
+                        <input class="form-check-input" type="radio" formControlName="watching" name="animeRadio"
+                            id="animeRadio" value="&check;">
                         <label class="form-check-label" for="watching">
                             Watching
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="animeRadio" id="toWatch" [value]="true">
+                        <input class="form-check-input" type="radio" formControlName="toWatch" name="animeRadio"
+                            id="animeRadio" value="&check;">
                         <label class="form-check-label" for="toWatch">
                             To Watch
                         </label>

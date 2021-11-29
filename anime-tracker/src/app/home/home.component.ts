@@ -20,9 +20,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.formValue = this.formBuilder.group({
       title: [''],
-      watched: [],
-      watching: [],
-      toWatch: []
+      watched: [''],
+      watching: [''],
+      toWatch: ['']
     })
 
     this.getAllAnime();
