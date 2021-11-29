@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
   formValue !: FormGroup;
   animeModelObj: AnimeModel = new AnimeModel();
   animeData !: any;
+  showAdd !: boolean;
+  showUpdate !: boolean;
   constructor(private formBuilder: FormBuilder, private api: ApiService) { }
 
   ngOnInit(): void {
@@ -24,6 +26,12 @@ export class HomeComponent implements OnInit {
     })
 
     this.getAllAnime();
+  }
+
+  clickAddShow() {
+    this.formValue.reset();
+    this.showAdd = true;
+    this.showUpdate = false;
   }
 
   postAnimeDetails() {
@@ -51,7 +59,16 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  deleteShow(part: any) {
+    this.api.deleteAnime(part.id).subscribe(res => {
+      alert("Anime Deleted");
+      this.getAllAnime();
+    })
+  }
+
   onEdit(part: any) {
+    this.showAdd = false;
+    this.showUpdate = true;
     this.animeModelObj.id = part.id;
     this.formValue.controls['title'].setValue(part.title);
     this.formValue.controls['watched'].setValue(part.watched);
