@@ -4,6 +4,44 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "Naruto",
+      "watched": false,
+      "toWatch": false
+    },
+    {
+      "id": 3,
+      "title": "Haikyu",
+      "watched": false,
+      "toWatch": false
+    },
+    {
+      "id": 4,
+      "title": "test",
+      "watched": false,
+      "toWatch": false
+    },
+    {
+      "id": 5,
+      "title": "test2",
+      "watched": false,
+      "toWatch": false
+    },
+    {
+      "id": 6,
+      "title": "Black Clover",
+      "watched": null,
+      "watching": false,
+      "toWatch": null
+    },
+    {
+      "id": 7,
+      "title": "another test",
+      "watched": null,
+      "watching": true,
+      "toWatch": null
     }
   ],
   "comments": [

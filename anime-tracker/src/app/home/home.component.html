@@ -29,17 +29,21 @@
                 <tr>
                     <th scope="col">Title</th>
                     <th scope="col">Watched</th>
+                    <th scope="col">Watching</th>
                     <th scope="col">To Watch</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>One Piece</td>
-                    <td>&check;</td>
-                    <td></td>
+                <tr *ngFor="let part of animeData">
+                    <td>{{ part.title }}</td>
+                    <td>{{ part.watched }}</td>
+                    <td>{{ part.watching }}</td>
+                    <td>{{ part.toWatch }}</td>
                     <td>
-                        <button class="btn btn-warning mx-1">Edit</button>
+                        <button (click)="onEdit(part)" type="button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                            class="btn btn-warning">Edit</button>
                     </td>
                 </tr>
             </tbody>
@@ -66,22 +70,30 @@
                             placeholder="Enter title">
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="yes" id="yes" value="yes" checked>
-                        <label class="form-check-label" for="exampleRadios1">
+                        <input class="form-check-input" type="radio" name="animeRadio" id="watched" value="watched">
+                        <label class="form-check-label" for="watched">
                             Watched
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="no" id="no" value="no">
-                        <label class="form-check-label" for="exampleRadios2">
+                        <input class="form-check-input" type="radio" name="animeRadio" id="watching" value="watching">
+                        <label class="form-check-label" for="watching">
+                            Watching
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="animeRadio" id="toWatch" value="toWatch">
+                        <label class="form-check-label" for="toWatch">
                             To Watch
                         </label>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal"
+                    aria-label="Close">Close</button>
+                <button type="button" (click)="postAnimeDetails()" class="btn btn-primary">Add</button>
+                <button type="button" (click)="updateAnimeDetails()" class="btn btn-primary">Update</button>
             </div>
         </div>
     </div>
