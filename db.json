@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "One Piece",
+      "watched": null,
+      "watching": "✓",
+      "toWatch": null
+    },
+    {
+      "id": 2,
+      "title": "Naruto",
+      "watched": "✓",
+      "watching": null,
+      "toWatch": null
+    },
+    {
+      "id": 3,
+      "title": "World Trigger",
+      "watched": null,
+      "watching": "✓",
+      "toWatch": null
+    },
+    {
+      "id": 4,
+      "title": "Chainsaw Man",
+      "watched": null,
+      "watching": null,
+      "toWatch": "✓"
+    },
+    {
+      "id": 5,
+      "title": "Haikyu!!",
+      "watched": null,
+      "watching": "✓",
+      "toWatch": null
+    },
+    {
+      "id": 6,
+      "title": "Hunter x Hunter",
+      "watched": "✓",
+      "watching": null,
+      "toWatch": null
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
