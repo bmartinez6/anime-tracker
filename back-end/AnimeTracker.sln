@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimeUI", "AnimeUI\AnimeUI.csproj", "{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DL", "DL\DL.csproj", "{11E2B60A-81C1-44EF-B156-62B9C6281DB2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL", "BL\BL.csproj", "{BCF568D4-CCA9-4827-96D2-CB5197C84588}"
@@ -23,18 +21,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Debug|x64.Build.0 = Debug|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Debug|x86.Build.0 = Debug|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Release|x64.ActiveCfg = Release|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Release|x64.Build.0 = Release|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Release|x86.ActiveCfg = Release|Any CPU
-		{122998B1-B3A5-4D61-A6A6-C30D93F0DDC9}.Release|x86.Build.0 = Release|Any CPU
 		{11E2B60A-81C1-44EF-B156-62B9C6281DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{11E2B60A-81C1-44EF-B156-62B9C6281DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11E2B60A-81C1-44EF-B156-62B9C6281DB2}.Debug|x64.ActiveCfg = Debug|Any CPU
